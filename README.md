@@ -1,9 +1,9 @@
 # Dropbox Tools
 
-1. Install
+## Install
 
+1. install with pip
 ```bash
-pip install dropbox six
 pip install "git+https://github.com/lithiumice/Dropbox-tools"
 ```
 
@@ -12,7 +12,19 @@ or install from local clone
 pip install -e .
 ```
 
-2. How to use / Usage
+2. install with poetry
+```bash
+poetry add "git+https://github.com/lithiumice/Dropbox-tools"
+```
+
+or install from local clone
+
+```bash
+# poetry init
+poetry install
+```
+
+## How to use / Usage
 
 ```bash
 # set dropbox api token to environment
@@ -20,7 +32,7 @@ pip install -e .
 export DBX_TOKEN=xxxx
 
 # python dbx.py -i /path/to/local/file
-dbx 
+dbx up -l /path/to/local/file [-r /remote/folder]
 ```
 
 ## License
