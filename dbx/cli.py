@@ -21,9 +21,9 @@ def get_dbx_instance():
     return dbx
 
 @click.command()
-@click.argument('local_folder', type=click.Path(exists=True))
-@click.argument('remote_folder', type=str)
-def upload_single_file(local_file, remote_folder="/"):
+@click.option('-l', '--local_file', type=click.Path(exists=True))
+@click.option('-r', '--remote_folder', type=str, default="/")
+def up(local_file, remote_folder="/"):
     """
     Args:
         local_file: full path to the file
@@ -38,7 +38,7 @@ def upload_single_file(local_file, remote_folder="/"):
     print(f"[INFO] Uploaded {local_file} to {remote_folder}")
     
     
-cli.add_command(upload_single_file)
+cli.add_command(up)
 
 
 if __name__ == "__main__":
