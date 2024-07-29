@@ -34,7 +34,7 @@ def up(local_file, remote_folder="/"):
     
     dbx = get_dbx_instance()
     
-    upload(dbx, full_name=local_file, folder=remote_folder, subfolder="", name=Path(local_file).name)
+    upload(dbx, fullname=local_file, folder=remote_folder, subfolder="", name=Path(local_file).name)
     print(f"[INFO] Uploaded {local_file} to {remote_folder}")
     
     
