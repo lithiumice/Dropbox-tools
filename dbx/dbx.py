@@ -181,7 +181,7 @@ def upload(dbx, fullname, folder, subfolder, name, overwrite=False):
             res = dbx.files_upload(
                 data, path, mode,
                 client_modified=datetime.datetime(*time.gmtime(mtime)[:6]),
-                mute=True)
+                mute=False)
         except dropbox.exceptions.ApiError as err:
             print('*** API error', err)
             return None
