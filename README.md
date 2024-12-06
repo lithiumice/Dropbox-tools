@@ -1,5 +1,7 @@
 # Dropbox Tools
 
+Dropbox utilities(sync, upload, etc) based on offical Dropbox API
+
 ## TODO
 - [ ] add progress bar when uploading. refer https://github.com/dropbox/dropbox-sdk-python/blob/c5ea3f8e900512222a234b9f353f0abcbf9f865a/dropbox/base.py#L3172
 
